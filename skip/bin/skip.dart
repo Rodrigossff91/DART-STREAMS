@@ -4,7 +4,7 @@ Future<void> main(List<String> arguments) async {
 
   stream = stream.skipWhile((int numero) => numero < 10);
 
-  // stream = stream.take(5).skip(2);
+  stream = stream.take(5).skip(2);
 
   await for (var i in stream) {
     print(i);
